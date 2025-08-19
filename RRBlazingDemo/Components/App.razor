@@ -5,8 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="/" />
-    <link rel="stylesheet" href="@Assets["app.css"]" />
-    <link rel="stylesheet" href="@Assets["RRBlazingDemo.styles.css"]" />
+    <link href="_content/RR.Blazor/css/main.css" rel="stylesheet" />
     <ImportMap />
     <HeadOutlet @rendermode="InteractiveServer" />
 </head>
@@ -14,6 +13,7 @@
 <body>
     <Routes @rendermode="InteractiveServer" />
     <script src="_framework/blazor.web.js"></script>
+    <script type="module" src="_content/RR.Blazor/js/rr-blazor.js"></script>
 </body>
 
 </html>

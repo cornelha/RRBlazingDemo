@@ -1,10 +1,18 @@
 using RRBlazingDemo.Components;
-
+using RR.Blazor.ServiceSetup;
+using RR.Blazor.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddRRBlazor(options => options
+	.WithTheme(theme => {
+		theme.Mode = ThemeMode.Dark;
+		theme.PrimaryColor = "#0078D4";
+	})
+);
 
 var app = builder.Build();
 

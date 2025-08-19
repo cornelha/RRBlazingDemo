@@ -10,4 +10,8 @@
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RR.Blazor\RR.Blazor.csproj" />
+  </ItemGroup>
+
 </Project>
