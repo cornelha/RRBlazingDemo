@@ -1,0 +1,3 @@
+[submodule "RR.Blazor"]
+	path = RR.Blazor
+	url = https://github.com/RaRdq/RR.Blazor.git
